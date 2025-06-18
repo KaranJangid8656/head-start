@@ -4,7 +4,7 @@ import { ArrowRight, Play, BookOpen, Star, Users } from "lucide-react";
 
 export const HeroSection = () => {
   return (
-    <section className="relative pt-32 pb-24 bg-gradient-to-br from-[#24A89C] via-[#2BB4A8] to-[#32C0B4] overflow-hidden">
+    <section id="hero" className="relative pt-32 pb-24 bg-gradient-to-br from-[#24A89C] via-[#2BB4A8] to-[#32C0B4] overflow-hidden">
       {/* Background decorations */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-10 w-72 h-72 bg-orange-300/10 rounded-full blur-3xl"></div>
@@ -35,12 +35,22 @@ export const HeroSection = () => {
               
               <div className="w-24 h-1 bg-gradient-to-r from-orange-300 to-orange-400 mx-auto lg:mx-0 rounded-full"></div>
               
-              <p className="text-xl lg:text-2xl text-white/90 leading-relaxed max-w-2xl">
-                Unlock Your Career Potential with HeadStart. Start Your Journey to Success Today! 
-                <span className="block mt-2 font-medium text-orange-200">
-                  Don't just dream about a successful career—take action!
-                </span>
-              </p>
+              <p
+  className="text-2xl md:text-2.5xl font-medium text-white/90 leading-relaxed max-w-2xl mx-auto text-center mt-6 mb-2"
+  style={{
+    fontFamily: 'Montserrat, Arial, sans-serif',
+    textShadow: '0 2px 12px rgba(0,0,0,0.12)'
+  }}
+>
+  Unlock Your Career Potential with HeadStart.<br className="hidden md:inline" />
+  <span className="block">Start Your Journey to Success Today!</span>
+  <span
+    className="block mt-4 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-orange-200 via-yellow-200 to-orange-400 drop-shadow"
+    style={{fontFamily: 'Montserrat, Arial, sans-serif'}}
+  >
+    Don't just dream about a successful career—<span className="underline underline-offset-4 decoration-orange-300">take action!</span>
+  </span>
+</p>
             </div>
 
             {/* CTA Buttons */}
