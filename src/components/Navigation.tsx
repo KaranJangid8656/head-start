@@ -7,17 +7,23 @@ export const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 w-full bg-gradient-to-r from-[#24A89C] to-[#2BB4A8] backdrop-blur-sm z-50 shadow-lg">
+    <nav className="fixed left-1/2 -translate-x-1/2 top-6 max-w-5xl w-[96%] rounded-2xl bg-gradient-to-r from-[#24A89C]/90 to-[#2BB4A8]/90 backdrop-blur-md z-50 shadow-2xl border border-white/20" style={{boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.18)'}}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center">
-              <BookOpen className="w-6 h-6 text-white" />
-            </div>
-            <span className="text-xl font-bold text-white">
-              HeadStart
-            </span>
-          </div>
+          <div className="flex items-center">
+  <span
+  className="text-2xl md:text-3xl font-semibold text-white tracking-wide"
+  style={{
+    fontFamily: 'Montserrat, Arial, sans-serif',
+    letterSpacing: '0.01em',
+    textShadow: '0 1px 4px rgba(0,0,0,0.10)',
+    WebkitFontSmoothing: 'antialiased',
+    MozOsxFontSmoothing: 'grayscale'
+  }}
+>
+  HeadStart
+</span>
+</div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
