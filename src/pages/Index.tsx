@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { BookOpen, Users, Target, TrendingUp, Award, Star, ArrowRight, Download, Play, LinkedIn, Mail } from "lucide-react";
+import { BookOpen, Users, Target, TrendingUp, Award, Star, ArrowRight, Download, Play, Linkedin, Mail } from "lucide-react";
 import { HeroSection } from "@/components/HeroSection";
 import { AboutSection } from "@/components/AboutSection";
 import { BenefitsSection } from "@/components/BenefitsSection";

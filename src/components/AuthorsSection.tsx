@@ -1,7 +1,6 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { LinkedIn, Mail } from "lucide-react";
+import { Linkedin, Mail } from "lucide-react";
 
 const authors = [
   {
@@ -42,7 +41,7 @@ export const AuthorsSection = () => {
                 
                 <div className="flex justify-center space-x-4">
                   <Button variant="outline" size="sm" className="flex items-center">
-                    <LinkedIn className="w-4 h-4 mr-2" />
+                    <Linkedin className="w-4 h-4 mr-2" />
                     LinkedIn
                   </Button>
                   <Button variant="outline" size="sm" className="flex items-center">
