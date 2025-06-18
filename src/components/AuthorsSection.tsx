@@ -1,3 +1,4 @@
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Linkedin, Mail } from "lucide-react";
@@ -17,7 +18,7 @@ const authors = [
 
 export const AuthorsSection = () => {
   return (
-    <section id="authors" className="py-16 bg-white">
+    <section id="authors" className="py-16 bg-gradient-to-br from-white via-[#24A89C]/5 to-orange-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Meet The Authors</h2>
@@ -28,10 +29,10 @@ export const AuthorsSection = () => {
 
         <div className="grid md:grid-cols-2 gap-12">
           {authors.map((author, index) => (
-            <Card key={index} className="hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
+            <Card key={index} className="hover:shadow-xl transition-all duration-300 border-0 shadow-lg bg-white/90 backdrop-blur-sm">
               <CardContent className="p-8">
                 <div className="text-center mb-6">
-                  <div className="w-32 h-32 bg-gradient-to-r from-teal-500 to-orange-500 rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <div className="w-32 h-32 bg-gradient-to-r from-[#24A89C] to-orange-500 rounded-full mx-auto mb-4 flex items-center justify-center">
                     <span className="text-white text-3xl font-bold">{author.name.split(' ').map(n => n[0]).join('')}</span>
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">{author.name}</h3>
@@ -40,11 +41,11 @@ export const AuthorsSection = () => {
                 <p className="text-gray-600 leading-relaxed mb-6">{author.bio}</p>
                 
                 <div className="flex justify-center space-x-4">
-                  <Button variant="outline" size="sm" className="flex items-center">
+                  <Button variant="outline" size="sm" className="flex items-center border-[#24A89C] text-[#24A89C] hover:bg-[#24A89C]/10">
                     <Linkedin className="w-4 h-4 mr-2" />
                     LinkedIn
                   </Button>
-                  <Button variant="outline" size="sm" className="flex items-center">
+                  <Button variant="outline" size="sm" className="flex items-center border-orange-500 text-orange-500 hover:bg-orange-50">
                     <Mail className="w-4 h-4 mr-2" />
                     Email
                   </Button>

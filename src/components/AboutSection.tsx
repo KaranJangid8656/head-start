@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export const AboutSection = () => {
   return (
-    <section id="about" className="py-16 bg-white">
+    <section id="about" className="py-16 bg-gradient-to-br from-white via-[#24A89C]/5 to-[#24A89C]/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Why HeadStart?</h2>
@@ -21,7 +21,7 @@ export const AboutSection = () => {
               your career or making a transition, this book is your roadmap to success.
             </p>
             
-            <div className="bg-gradient-to-r from-teal-50 to-orange-50 p-6 rounded-lg border-l-4 border-teal-500">
+            <div className="bg-gradient-to-r from-[#24A89C]/10 to-orange-50 p-6 rounded-lg border-l-4 border-[#24A89C]">
               <p className="text-gray-800 font-medium italic">
                 "The perfect runway for a young professional's career to take off. Packed with actionable 
                 insights from industry veterans and proven strategies to win at the workplace."

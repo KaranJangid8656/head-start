@@ -4,17 +4,17 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Download, BookOpen, Users, Handshake, RefreshCw, Target, Timer } from "lucide-react";
 
 const guides = [
-  { icon: BookOpen, title: "Be an Avid Learner", color: "from-blue-500 to-blue-600" },
-  { icon: Users, title: "Be a Team Player", color: "from-green-500 to-green-600" },
-  { icon: Handshake, title: "Be a Relationship Builder", color: "from-purple-500 to-purple-600" },
-  { icon: RefreshCw, title: "Be a Career Transition Expert", color: "from-orange-500 to-orange-600" },
-  { icon: Target, title: "Be a Go Getter", color: "from-red-500 to-red-600" },
-  { icon: Timer, title: "Be a Marathon Runner", color: "from-teal-500 to-teal-600" }
+  { icon: BookOpen, title: "Be an Avid Learner", color: "from-[#24A89C] to-[#2BB4A8]" },
+  { icon: Users, title: "Be a Team Player", color: "from-[#24A89C] to-orange-500" },
+  { icon: Handshake, title: "Be a Relationship Builder", color: "from-orange-500 to-orange-600" },
+  { icon: RefreshCw, title: "Be a Career Transition Expert", color: "from-[#24A89C] to-[#32C0B4]" },
+  { icon: Target, title: "Be a Go Getter", color: "from-orange-500 to-[#24A89C]" },
+  { icon: Timer, title: "Be a Marathon Runner", color: "from-[#2BB4A8] to-orange-500" }
 ];
 
 export const VisualGuidesSection = () => {
   return (
-    <section id="guides" className="py-16 bg-gradient-to-br from-teal-50 via-white to-orange-50">
+    <section id="guides" className="py-16 bg-gradient-to-br from-[#24A89C]/10 via-white to-orange-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Bite-Sized Section Highlights</h2>
@@ -26,7 +26,7 @@ export const VisualGuidesSection = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {guides.map((guide, index) => (
-            <Card key={index} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-0 shadow-lg">
+            <Card key={index} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-0 shadow-lg bg-white/90 backdrop-blur-sm">
               <CardContent className="p-6 text-center">
                 <div className={`w-16 h-16 bg-gradient-to-r ${guide.color} rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform`}>
                   <guide.icon className="w-8 h-8 text-white" />
@@ -38,7 +38,7 @@ export const VisualGuidesSection = () => {
         </div>
 
         <div className="text-center">
-          <Button size="lg" className="bg-gradient-to-r from-teal-500 to-teal-600 hover:from-teal-600 hover:to-teal-700 text-white px-8 py-3 text-lg group">
+          <Button size="lg" className="bg-gradient-to-r from-[#24A89C] to-[#2BB4A8] hover:from-[#2BB4A8] hover:to-[#32C0B4] text-white px-8 py-3 text-lg group border-0">
             <Download className="mr-2 w-5 h-5 group-hover:bounce" />
             Download Visual Guides
           </Button>

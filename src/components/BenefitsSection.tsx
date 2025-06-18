@@ -37,7 +37,7 @@ const benefits = [
 
 export const BenefitsSection = () => {
   return (
-    <section className="py-16 bg-gradient-to-br from-gray-50 to-teal-50">
+    <section className="py-16 bg-gradient-to-br from-[#24A89C]/10 via-[#24A89C]/5 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">What Makes HeadStart Different?</h2>
@@ -48,10 +48,10 @@ export const BenefitsSection = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {benefits.map((benefit, index) => (
-            <Card key={index} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-0 shadow-lg">
+            <Card key={index} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-0 shadow-lg bg-white/80 backdrop-blur-sm">
               <CardContent className="p-6">
                 <div className="mb-4">
-                  <div className="w-12 h-12 bg-gradient-to-r from-teal-500 to-orange-500 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 bg-gradient-to-r from-[#24A89C] to-orange-500 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
                     <benefit.icon className="w-6 h-6 text-white" />
                   </div>
                 </div>

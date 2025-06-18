@@ -27,7 +27,7 @@ const testimonials = [
 
 export const TestimonialsSection = () => {
   return (
-    <section id="testimonials" className="py-16 bg-gray-900">
+    <section id="testimonials" className="py-16 bg-gradient-to-br from-gray-900 via-[#24A89C]/20 to-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-white mb-4">Critical Acclaim</h2>
@@ -38,10 +38,10 @@ export const TestimonialsSection = () => {
 
         <div className="grid md:grid-cols-2 gap-8">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="bg-gray-800 border-gray-700 hover:bg-gray-750 transition-colors group">
+            <Card key={index} className="bg-gradient-to-br from-gray-800/90 to-[#24A89C]/10 border-gray-700 hover:bg-gray-750 transition-colors group backdrop-blur-sm">
               <CardContent className="p-6">
                 <div className="flex items-start mb-4">
-                  <Quote className="w-8 h-8 text-teal-400 mr-3 flex-shrink-0" />
+                  <Quote className="w-8 h-8 text-[#24A89C] mr-3 flex-shrink-0" />
                   <div className="flex text-orange-400">
                     {[...Array(5)].map((_, i) => (
                       <Star key={i} className="w-4 h-4 fill-current" />
