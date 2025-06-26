@@ -1,4 +1,4 @@
-# HeadStart
+# HeadStart 3
 
 Unlock your career potential with HeadStart — a modern, responsive career development web app.
 
@@ -10,6 +10,10 @@ HeadStart is a career development platform and book companion site, built with m
 - Modern UI with Tailwind CSS and shadcn-ui
 - Fast development with Vite and React
 - Customizable branding (favicon, browser title, etc.)
+- Section highlights for different career stages (students, early-career, mid-career)
+- Visual guides for quick learning and reference
+- Meet the Authors section with author bios and contact links
+- Downloadable resources and actionable tactics
 
 ## Getting Started
 To run HeadStart locally:
@@ -21,12 +25,16 @@ cd headstart-book
 
 # 2. Install dependencies
 npm install
+# or
+bun install
 
 # 3. Start the development server
 npm run dev
+# or
+bun run dev
 ```
 
-Visit `http://localhost:8080` in your browser to view the app.
+Visit `http://localhost:5173` in your browser to view the app.
 
 ## Tech Stack
 - [Vite](https://vitejs.dev/) (build tool)
@@ -36,7 +44,8 @@ Visit `http://localhost:8080` in your browser to view the app.
 - [shadcn-ui](https://ui.shadcn.com/) (UI components)
 
 ## Customization
-### Change Favicon & Browser Tab Title
+- Update images and links in the `src/components` directory as needed.
+- Visual guides download link can be changed in `VisualGuidesSection.tsx`.
 - To change the favicon, replace the file at `public/favicon.ico` (or update the `<link rel="icon">` in `index.html`).
 - To change the browser tab title, edit the `<title>` tag in `index.html` (e.g., `<title>HeadStart</title>`).
 

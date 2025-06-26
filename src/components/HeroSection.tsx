@@ -1,6 +1,5 @@
-
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Play, BookOpen, Star, Users } from "lucide-react";
+import { ArrowRight, Play } from "lucide-react";
 
 export const HeroSection = () => {
   return (
@@ -16,13 +15,6 @@ export const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left content */}
           <div className="space-y-10 text-center lg:text-left">
-            {/* Badge */}
-            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 text-sm text-white/90">
-              <Star className="w-4 h-4 text-orange-300" />
-              #1 Career Development Book
-              <Users className="w-4 h-4 text-orange-300" />
-            </div>
-
             {/* Main heading */}
             <div className="space-y-6">
               <h1 className="text-6xl lg:text-7xl font-bold leading-tight tracking-tight">
@@ -55,45 +47,40 @@ export const HeroSection = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
-              <Button 
-                size="lg" 
-                className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-10 py-4 text-lg font-semibold rounded-xl shadow-2xl hover:shadow-orange-500/25 transform hover:scale-105 transition-all duration-300 border-0 group"
-              >
-                Order Now!
-                <ArrowRight className="ml-3 w-6 h-6 group-hover:translate-x-1 transition-transform" />
-              </Button>
+              <a href="https://amzn.to/43b42LE" target="_blank" rel="noopener noreferrer">
+                <Button 
+                  size="lg" 
+                  className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-10 py-4 text-lg font-semibold rounded-xl shadow-2xl hover:shadow-orange-500/25 transform hover:scale-105 transition-all duration-300 border-0 group"
+                >
+                  Order Now!
+                  <ArrowRight className="ml-3 w-6 h-6 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </a>
               
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-2 border-white/30 bg-white/10 backdrop-blur-sm text-white hover:bg-white/20 hover:border-white/50 px-10 py-4 text-lg font-semibold rounded-xl transition-all duration-300 group"
-              >
-                <Play className="mr-3 w-6 h-6 group-hover:scale-110 transition-transform" />
-                Watch Video Series
-              </Button>
+              <a href="https://youtu.be/PyWPxMIBzO4" target="_blank" rel="noopener noreferrer">
+                <Button 
+                  size="lg" 
+                  className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-10 py-4 text-lg font-semibold rounded-xl shadow-2xl hover:shadow-orange-500/25 transform hover:scale-105 transition-all duration-300 border-0 group ml-0 sm:ml-4"
+                >
+                  <Play className="mr-3 w-6 h-6 group-hover:scale-110 transition-transform" />
+                  Watch Video
+                </Button>
+              </a>
             </div>
 
             {/* Authors info */}
-            <div className="flex items-center justify-center lg:justify-start space-x-3 pt-6">
-              <div className="flex items-center space-x-3 bg-white/10 backdrop-blur-sm rounded-full px-6 py-3 border border-white/20">
-                <BookOpen className="w-6 h-6 text-orange-300" />
-                <span className="text-white/90 font-medium">By Vivek Gambhir & Sunder Ramachandran</span>
-              </div>
+            <div className="flex items-center justify-center lg:justify-start pt-2 pb-2 gap-2">
+              <img src="https://headstartbook.in/wp-content/uploads/2024/09/a.webp" alt="Vivek Gambhir" className="w-11 h-11 rounded-full object-center object-cover border-2 border-orange-900 shadow" style={{objectPosition: 'top'}} />
+              <img src="https://headstartbook.in/wp-content/uploads/2024/09/Untitled-design-5-1.webp" alt="Sunder Ramachandran" className="w-11 h-11 rounded-full object-center object-cover border-2 border-orange-900 shadow" style={{objectPosition: 'top'}} />
+              <span className="text-orange-900 font-semibold whitespace-nowrap" style={{fontFamily: 'Montserrat, Arial, sans-serif', textShadow: '0 2px 12px rgba(0,0,0,0.08)'}}>
+                By <span className="font-bold">Vivek Gambhir</span> & <span className="font-bold">Sunder Ramachandran</span>
+              </span>
             </div>
           </div>
 
           {/* Right content - Book image */}
           <div className="relative flex justify-center lg:justify-end">
             <div className="relative group">
-              {/* Floating elements */}
-              <div className="absolute -top-8 -left-8 w-16 h-16 bg-orange-400/20 rounded-2xl backdrop-blur-sm border border-white/20 flex items-center justify-center animate-pulse">
-                <Star className="w-8 h-8 text-orange-300" />
-              </div>
-              
-              <div className="absolute -bottom-8 -right-8 w-20 h-20 bg-white/10 rounded-2xl backdrop-blur-sm border border-white/20 flex items-center justify-center animate-pulse delay-1000">
-                <Users className="w-10 h-10 text-white" />
-              </div>
-
               {/* Main book image */}
               <div className="relative z-10 transform group-hover:scale-105 transition-transform duration-500">
                 <img 
@@ -104,19 +91,6 @@ export const HeroSection = () => {
                 
                 {/* Glow effect */}
                 <div className="absolute inset-0 bg-gradient-to-r from-orange-400/30 to-white/30 blur-3xl -z-10 group-hover:blur-2xl transition-all duration-500"></div>
-              </div>
-
-              {/* Success metrics */}
-              <div className="absolute top-1/2 -right-16 transform -translate-y-1/2 bg-white/15 backdrop-blur-sm rounded-2xl p-4 border border-white/20 hidden xl:block">
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-white">5.0</div>
-                  <div className="flex space-x-1 justify-center mb-1">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-3 h-3 text-orange-300 fill-current" />
-                    ))}
-                  </div>
-                  <div className="text-xs text-white/70">1000+ Reviews</div>
-                </div>
               </div>
             </div>
           </div>
