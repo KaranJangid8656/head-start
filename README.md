@@ -1,4 +1,4 @@
-# HeadStart 3
+# HeadStart 
 
 Unlock your career potential with HeadStart — a modern, responsive career development web app.
 
@@ -15,26 +15,8 @@ HeadStart is a career development platform and book companion site, built with m
 - Meet the Authors section with author bios and contact links
 - Downloadable resources and actionable tactics
 
-## Getting Started
-To run HeadStart locally:
 
-```sh
-# 1. Clone the repository
-git clone <YOUR_GIT_URL>
-cd headstart-book
 
-# 2. Install dependencies
-npm install
-# or
-bun install
-
-# 3. Start the development server
-npm run dev
-# or
-bun run dev
-```
-
-Visit `http://localhost:5173` in your browser to view the app.
 
 ## Tech Stack
 - [Vite](https://vitejs.dev/) (build tool)
@@ -43,20 +25,6 @@ Visit `http://localhost:5173` in your browser to view the app.
 - [Tailwind CSS](https://tailwindcss.com/) (utility-first CSS)
 - [shadcn-ui](https://ui.shadcn.com/) (UI components)
 
-## Customization
-- Update images and links in the `src/components` directory as needed.
-- Visual guides download link can be changed in `VisualGuidesSection.tsx`.
-- To change the favicon, replace the file at `public/favicon.ico` (or update the `<link rel="icon">` in `index.html`).
-- To change the browser tab title, edit the `<title>` tag in `index.html` (e.g., `<title>HeadStart</title>`).
 
-## Deployment
-You can deploy HeadStart to any modern static hosting provider (Vercel, Netlify, GitHub Pages, etc.).
 
-```sh
-npm run build
-# Deploy the contents of the `dist` folder
-```
-
----
-
-© 2025 HeadStart. All rights reserved.
+© 2025 Karan Suthar. All rights reserved.
