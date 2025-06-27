@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -9,9 +8,12 @@ import { BenefitsSection } from "@/components/BenefitsSection";
 import { WhoWillBenefitSection } from "@/components/WhoWillBenefitSection";
 import { VisualGuidesSection } from "@/components/VisualGuidesSection";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
-import { AuthorsSection } from "@/components/AuthorsSection";
 import { Footer } from "@/components/Footer";
 import { Navigation } from "@/components/Navigation";
+import { SneakPeekSection } from "@/components/SneakPeekSection";
+import { YouTubeVideoSection } from "@/components/SneakPeekSection";
+import { MeetTheAuthorsSection } from "@/components/MeetTheAuthorsSection";
+import { UnlockCareerSuccessSection } from "@/components/UnlockCareerSuccessSection";
 
 const Index = () => {
   return (
@@ -22,8 +24,11 @@ const Index = () => {
       <BenefitsSection />
       <WhoWillBenefitSection />
       <VisualGuidesSection />
+      <SneakPeekSection />
       <TestimonialsSection />
-      <AuthorsSection />
+      <MeetTheAuthorsSection />
+      <YouTubeVideoSection />
+      <UnlockCareerSuccessSection />
       <Footer />
     </div>
   );

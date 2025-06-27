@@ -25,6 +25,20 @@ HeadStart is a career development platform and book companion site, built with m
 - [Tailwind CSS](https://tailwindcss.com/) (utility-first CSS)
 - [shadcn-ui](https://ui.shadcn.com/) (UI components)
 
+## Customization
+- Update images and links in the `src/components` directory as needed.
+- Visual guides download link can be changed in `VisualGuidesSection.tsx`.
+- To change the favicon, replace the file at `public/favicon.ico` (or update the `<link rel="icon">` in `index.html`).
+- To change the browser tab title, edit the `<title>` tag in `index.html` (e.g., `<title>HeadStart</title>`).
 
+## Deployment
+You can deploy HeadStart to any modern static hosting provider (Vercel, Netlify, GitHub Pages, etc.).
 
-© 2025 Karan Suthar. All rights reserved.
+```sh
+npm run build
+# Deploy the contents of the `dist` folder
+```
+
+---
+
+© 2025 HeadStart. All rights reserved.

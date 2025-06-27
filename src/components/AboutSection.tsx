@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 
 export const AboutSection = () => {
@@ -7,6 +6,19 @@ export const AboutSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Why HeadStart?</h2>
+          <div className="flex justify-center mb-6">
+            <iframe
+              width="1200"
+              height="675"
+              src="https://www.youtube.com/embed/PyWPxMIBzO4"
+              title="Why HeadStart? YouTube video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              className="w-full max-w-6xl aspect-video rounded-xl shadow-lg object-cover"
+              style={{ background: '#000' }}
+            ></iframe>
+          </div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Cut through the noise of online career advice with "HeadStart." Learn from industry veterans 
             who share real-life experiences, hard-earned insights, and proven strategies.

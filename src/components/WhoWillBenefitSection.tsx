@@ -43,16 +43,10 @@ export const WhoWillBenefitSection = () => {
 					{audiences.map((audience, index) => (
 						<Card
 							key={index}
-							className="group hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 border-0 shadow-lg overflow-hidden bg-white/90 backdrop-blur-sm"
+							className="group hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 border border-black shadow-lg overflow-hidden bg-white/90 backdrop-blur-sm"
 						>
 							<CardContent className="p-0">
-								<div
-									className={
-										"h-32 bg-gradient-to-r " +
-										audience.gradient +
-										" flex items-center justify-center"
-									}
-								>
+								<div className="h-32 flex items-center justify-center bg-white">
 									{index === 0 ? (
 										<img
 											src="https://cdn-icons-png.flaticon.com/128/3068/3068380.png"
